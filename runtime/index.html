@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>拳皇 Wing 1.2 · HTML5</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #000; overflow: hidden; }
+  body { display: flex; align-items: center; justify-content: center; font-family: system-ui, sans-serif; color: #ccc; }
+  canvas { display: block; touch-action: none; outline: none; }
+  #loading { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; background: #000; }
+  #bar { width: 260px; height: 6px; background: #222; border-radius: 3px; overflow: hidden; }
+  #bar > div { height: 100%; width: 0; background: #e8a33c; }
+  #start { display: none; padding: 10px 26px; font-size: 16px; background: #e8a33c; color: #000; border: 0; border-radius: 4px; cursor: pointer; }
+  #hud { position: absolute; right: 8px; bottom: 6px; font-size: 12px; opacity: .55; }
+  #hud button { background: none; color: #ccc; border: 1px solid #555; border-radius: 3px; padding: 2px 6px; cursor: pointer; }
+</style>
+</head>
+<body>
+<canvas id="stage" tabindex="0"></canvas>
+<div id="loading"><div>拳皇 Wing 1.2</div><div id="bar"><div></div></div><div id="msg">Loading…</div><button id="start">Start</button></div>
+<div id="hud"><button id="mute">Sound: on</button></div>
+<script>window.KOF = {};</script>
+<script src="js/as2.js"></script>
+<script src="js/engine.js"></script>
+<script src="js/render.js"></script>
+<script src="js/input.js"></script>
+<script src="js/patches.js"></script>
+<script src="data.js"></script>
+<script src="code.js"></script>
+<script src="sounds.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

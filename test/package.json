@@ -1,0 +1,7 @@
+{
+  "name": "kofwing12-swf2html-test",
+  "private": true,
+  "description": "Headless smoke test for a dist/ build",
+  "scripts": { "smoke": "node smoke.js ../dist/index.html" },
+  "devDependencies": { "playwright": "^1.40.0" }
+}
